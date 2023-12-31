@@ -1,0 +1,70 @@
+Вероятные инструменты:
+
+1.Web Scraping and Data Parsing:
+      1) https://travel.yandex.ru/api/hotels/searchSuggest?query=<data>
+      2) https://travel.yandex.ru/api/hotels/searchHotels?startSearchReason=queryWithSameGeo&geoId=<geoId from query1>
+
+        Beautiful Soup and Requests:
+                       These are widely used for web
+                  scraping and parsing HTML content. Beautiful Soup
+                  helps in navigating and searching the HTML tree,
+                  while Requests simplifies the process of making HTTP
+                  requests.
+
+2.Data Storage:
+
+        SQLite or SQLAlchemy:
+                 For a lightweight solution, you can use
+            SQLite for local storage. If you anticipate the need for a
+            more scalable and robust database system, consider using
+            SQLAlchemy with a relational database like PostgreSQL or
+            MySQL.
+
+3.AI/ML Integration:
+
+        Scikit-learn or TensorFlow:
+                     Depending on the complexity of
+            your AI analysis, Scikit-learn is a great library for
+            traditional machine learning tasks. For more advanced
+            tasks, TensorFlow is a powerful library that includes
+            tools for deep learning.
+
+4.User Communication and Interface:
+
+        Aiogram (Telegram Bot Framework):
+                     Since you've already chosen
+               Aiogram, it's a suitable choice for handling user
+               communication and interfacing with the Telegram
+               API. Make sure to explore its features for handling
+               user commands, messages, and callbacks effectively.
+               Web Framework for
+
+5.Documentation and Visualization:
+
+        Flask or FastAPI:
+                 If you plan to provide a web interface for
+              documentation or visualization, Flask or FastAPI can be
+              integrated into your project. They are lightweight web
+              frameworks that are easy to set up and use.
+
+6.Testing:
+
+        Pytest:
+                    For writing and executing unit tests for your
+                codebase. Testing is crucial for ensuring the
+                reliability of your bot.
+
+7.Version Control:
+
+        Git:
+                Use Git for version control to track changes in your
+             codebase and collaborate effectively with team members.
+             Environment Management:
+
+8.Documentation:
+
+        Sphinx or MkDocs:
+                  Create documentation for your project using
+               Sphinx or MkDocs. Well-documented code and project
+               instructions are essential for both developers and
+               users.
