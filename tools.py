@@ -81,7 +81,7 @@ def ssize(path: json, site: str) -> int:
 
 
 
-def  findval(city: json, price=0) -> float:
+def  findvalOst(city: json, price=0) -> list:
     '''Returns value of objects(hotels) in json.'''
     f = open(city)
     data = json.load(f)
@@ -111,7 +111,7 @@ def findsmallest(value: list) -> tuple:
 
 
 
-def sortval(city: json, price=0) -> list:
+def sortvalOst(city: json, price=0) -> list:
     '''Sort value from findval().'''
     value = findval(city, price=price)
     newArr = []
@@ -119,3 +119,16 @@ def sortval(city: json, price=0) -> list:
         smallest = findsmallest(value)
         newArr.append(value.pop(value.index(smallest)))
     return newArr
+
+
+def  findvalYa(city: json, price=0) -> list:
+    '''Returns value of objects(hotels) in json.'''
+    f = open(city, encoding='utf-8', errors='ignore')
+    data = json.load(f)
+    places = data['data']['hotels']
+    value = []
+    for i in range(len(places)-1):
+         if float(places[i]['offers'][0]['price']['value']) >= price:
+                value.append((i, places[i]['offers'][0]['price']['value'], places[i]['hotel']['name'], places[i]['hotel']['rating']))
+            # print(i, places[i]['name'],':' ,  places[i]['price'])
+    return value
