@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 19 10:55:47 2025
+
+@author: po
+For correct work is necessary to this file to be with "jsons" directory in the
+same place!
+
+"""
 import pandas as pd
 import numpy as np
 from tools import *
